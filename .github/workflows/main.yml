@@ -33,9 +33,9 @@ jobs:
       - name: copy dist file with scp
         uses: c0c1/scp-action@v1.0
         with:
-          src: '../../../docs/.vuepress/dist'
+          src: 'docs/.vuepress/dist'
           host: ${{secrets.REMOTE_HOST}}
           user: ${{secrets.REMOTE_USER}}
           key: ${{secrets.REMOTE_KEY}}
           remote: '/root/mydoc-vuepress'
-          password: ${{secrets.REMOTE_PASSWORD}}
+#           password: ${{secrets.REMOTE_PASSWORD}}
