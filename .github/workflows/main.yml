@@ -34,8 +34,8 @@ jobs:
         uses: c0c1/scp-action@v1.0
         with:
           src: 'docs/.vuepress/dist'
-          host: ${{REMOTE_HOST}}
-          user: ${{REMOTE_USER}}
-          key: ${{REMOTE_PASSWORD}}
+          host: ${{secret.REMOTE_HOST}}
+          user: ${{secret.REMOTE_USER}}
+          key: ${{secret.REMOTE_PASSWORD}}
           port: 8200
-          remote: ${{REMOTE_PATH}}
+          remote: '/root/mydoc-vuepress'
