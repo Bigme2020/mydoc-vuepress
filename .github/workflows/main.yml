@@ -31,11 +31,11 @@ jobs:
       - name: build app
         run: npm run build
       - name: copy dist file with scp
-        uses: c0c1/scp-action@v1.0
+        uses: siva1024/scp-deployer@v1.0
         with:
-          src: 'docs/.vuepress/dist'
+          source: 'docs/.vuepress/dist'
           host: ${{secrets.REMOTE_HOST}}
-          user: ${{secrets.REMOTE_USER}}
+          username: ${{secrets.REMOTE_USER}}
           key: ${{secrets.REMOTE_KEY}}
-          remote: '/root/mydoc-vuepress'
-#           password: ${{secrets.REMOTE_PASSWORD}}
+          target: '/root/mydoc-vuepress'
+          password: ${{secrets.REMOTE_PASSWORD}}
