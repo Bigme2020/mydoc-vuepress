@@ -38,3 +38,4 @@ jobs:
           user: ${{secrets.REMOTE_USER}}
           key: ${{secrets.REMOTE_KEY}}
           remote: '/root/mydoc-vuepress'
+          password: ${{secrets.REMOTE_PASSWORD}}
