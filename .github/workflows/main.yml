@@ -36,6 +36,5 @@ jobs:
           src: 'docs/.vuepress/dist'
           host: ${{secret.REMOTE_HOST}}
           user: ${{secret.REMOTE_USER}}
-          key: ${{secret.REMOTE_PASSWORD}}
-          port: 8200
+          key: ${{secret.REMOTE_KEY}}
           remote: '/root/mydoc-vuepress'
