@@ -33,7 +33,7 @@ jobs:
       - name: copy dist file with scp
         uses: siva1024/scp-deployer@v1.0
         with:
-          source: './docs/.vuepress/dist'
+          source: './docs/.vuepress/dist/'
           host: ${{secrets.REMOTE_HOST}}
           username: ${{secrets.REMOTE_USER}}
           key: ${{secrets.REMOTE_KEY}}
