@@ -26,8 +26,10 @@ jobs:
         uses: actions/setup-node@v3.4.1
         with: 
           node-version: "14.X"
+      - name: install pnpm
+        uses: pnpm/action-setup@v2.2.2
       - name: install deps
-        run: npm install
+        run: pnpm i
       - name: build app
         run: npm run build
       - name: copy dist file with scp
