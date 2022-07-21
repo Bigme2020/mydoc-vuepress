@@ -28,6 +28,8 @@ jobs:
           node-version: "14.X"
       - name: install pnpm
         uses: pnpm/action-setup@v2.2.2
+        with:
+          version: "7.X"
       - name: install deps
         run: pnpm i
       - name: build app
