@@ -1,4 +1,4 @@
-const { defaultTheme } = require('vuepress')
+const { defaultTheme } = require('@vuepress/theme-default')
 
 const { vue3sidebar } = require('./sidebars')
 
